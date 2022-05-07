@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="50dp"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="48dp">
+
+        <TextView
+            android:id="@+id/labelNomeConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição da conta:" />
+
+        <EditText
+            android:id="@+id/campoNomeContaReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/labelValorConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor:" />
+
+        <EditText
+            android:id="@+id/campoValorConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/labelDataVencimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data de vencimento:" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btnRegistrarConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:text="Cadastrar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
